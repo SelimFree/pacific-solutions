@@ -1,0 +1,38 @@
+{
+  "contactPage": {
+    "header": {
+      "title": "Contact Us",
+      "subtitle": "Initiate Strategic Operations"
+    }
+  },
+  "contactBlock": {
+    "title": "Engage Our Engineering Team",
+    "description": "Engage with our engineering and procurement specialists to discuss your operational requirements. From urgent component supply to comprehensive facility construction, we deliver rigorous, compliance-driven solutions tailored to your industrial objectives.",
+    "info": {
+      "emailLabel": "Corporate Email",
+      "email": "operations@rysgally-gun.com",
+      "phoneLabel": "Operations Desk",
+      "phone": "+993 (12) 48-81-46",
+      "addressLabel": "Headquarters",
+      "address": "Business Center ABM, Archabil 41, Ashgabat, Turkmenistan"
+    },
+    "form": {
+      "firstNameLabel": "First Name",
+      "firstNamePlaceholder": "e.g. John",
+      "lastNameLabel": "Last Name",
+      "lastNamePlaceholder": "e.g. Doe",
+      "companyLabel": "Company Name",
+      "companyPlaceholder": "e.g. Rysgally Gün LLC",
+      "emailLabel": "Business Email",
+      "emailPlaceholder": "operations@yourcompany.com",
+      "messageLabel": "Project Specifications",
+      "messagePlaceholder": "Please detail your technical requirements, standards, and expected timelines..."
+    },
+    "errorMessage": "There was an issue submitting your inquiry. Please ensure all fields are correct and try again, or contact us directly via email.",
+    "buttonSubmit": "Submit Inquiry",
+    "buttonSending": "Processing...",
+    "successTitle": "Inquiry Received",
+    "successMessage": "Your specifications have been securely transmitted to our engineering desk. A specialist will review your requirements and respond shortly.",
+    "successButton": "Submit Another Inquiry"
+  }
+}

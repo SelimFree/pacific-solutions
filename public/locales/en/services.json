@@ -1,0 +1,339 @@
+{
+  "servicesPage": {
+    "header": {
+      "title": "Integrated Services",
+      "subtitle": "Our Capabilities"
+    }
+  },
+  "servicesDirectoryBlock": {
+    "directory": {
+      "construction": "Industrial Facility Construction",
+      "procurement": "Strategic Procurement",
+      "maintenance": "Equipment Maintenance",
+      "machineShop": "Machine Shop Services",
+      "pressureManagement": "Pressure Management",
+      "ndt": "Advanced NDT Services",
+      "lifting": "Lifting Equipment Inspection",
+      "drillingTools": "Drilling Tools Inspection",
+      "rental": "Equipment Rental"
+    },
+    "content": {
+      "construction": {},
+      "procurement": {},
+      "maintenance": {},
+      "machineShop": {},
+      "pressureManagement": {},
+      "ndt": {},
+      "lifting": {},
+      "drillingTools": {},
+      "rental": {}
+    }
+  },
+  "servicesContent": {
+    "construction": {
+      "title": "Industrial Facility Construction",
+      "tagline": "Building the Future of Industry",
+      "intro": "We specialize in constructing and maintaining a wide range of industrial facilities, ensuring operational reliability and compliance with regulatory requirements. Our expertise spans multiple sectors, including energy, petrochemicals, and natural gas infrastructure.",
+      "facilitiesTitle": "Facilities We Work On",
+      "facilities": [
+        {
+          "title": "Refinery",
+          "desc": "Comprehensive construction and maintenance for oil and gas processing plants."
+        },
+        {
+          "title": "Power Plant",
+          "desc": "Building and upgrading facilities for efficient energy production."
+        },
+        {
+          "title": "Gas Terminal",
+          "desc": "Specialized construction for gas storage and distribution hubs."
+        },
+        {
+          "title": "Fertilizer Plant",
+          "desc": "Infrastructure solutions for chemical and agricultural production."
+        },
+        {
+          "title": "Tank Farm",
+          "desc": "Design and construction of large-scale storage facilities."
+        },
+        {
+          "title": "LNG Trunk Line",
+          "desc": "Expertise in constructing pipelines for liquefied natural gas transport."
+        }
+      ],
+      "workTitle": "Construction Work We Perform",
+      "work": [
+        {
+          "title": "Steel Structures",
+          "desc": "Comprehensive solutions for designing, fabricating, and erecting robust steel frameworks tailored for industrial applications. Engineered to comply with industry standards.",
+          "standards": ["AISC", "AWS"]
+        },
+        {
+          "title": "Tank Construction",
+          "desc": "We offer expert construction of storage tanks designed for safety, efficiency, and durability, catering to diverse industrial needs.",
+          "standards": ["API 650", "API 620"]
+        },
+        {
+          "title": "Insulation",
+          "desc": "Advanced thermal and acoustic insulation solutions to enhance energy efficiency, safety, and operational performance in industrial settings."
+        },
+        {
+          "title": "Piping Systems",
+          "desc": "Design, fabrication, and installation of precision piping systems for the safe and efficient transport of fluids and gases.",
+          "standards": ["Cryogenic", "High-Pressure"]
+        },
+        {
+          "title": "Painting & Protective Coatings",
+          "desc": "We apply high-performance, corrosion-resistant, and weatherproof coatings to steel frameworks, pipelines, tanks, and machinery."
+        }
+      ]
+    },
+    "procurement": {
+      "title": "Strategic Procurement",
+      "tagline": "Reliable Solutions for Critical Operations",
+      "intro": "Our wide range of products, including air dryers, compressors, automation components, cables, instrumentation, pumps, electrical and safety supplies, lab equipment, drives, transmission parts, mechanical components, and valves, offers dependable performance and precision. Designed for durability and ease of use, these solutions ensure safe and efficient system functionality.",
+      "workTitle": "Our Supply Capabilities Include",
+      "work": [
+        {
+          "title": "Cable Management & Consumables",
+          "desc": "Our cable management consumables and accessories, including cables, glands, heat shrink, joining kits, trays, lugs, and marking systems, simplify installation and organization. These products ensure secure connections and clear identification for efficient electrical setups."
+        },
+        {
+          "title": "Automation & Switchgear",
+          "desc": "Our automation and switchgear components, including panel meters, cam switches, contactors, control stations, timers, monitoring relays, overload relays, plug-in relays, push buttons, and limit switches, provide reliable control, monitoring, and protection for electrical systems. These products are designed for precision, ease of use, and durability, ensuring seamless operation and safety in various applications."
+        },
+        {
+          "title": "Instrumentation & Pumps",
+          "desc": "Our instrumentation and pumps, including chart recorders, gas meters, pressure gauges, fire and gas detectors, vacuum switches, pumps, flow level instruments, and load cells, offer accurate measurement and control. These tools provide precision and safety for critical processes."
+        },
+        {
+          "title": "Air Dryers, Compressors & Major Brand Spares",
+          "desc": "Our air dryers and compressors ensure efficient air compression and moisture removal for various applications, paired with genuine major brand spares for easy maintenance. These systems are built for consistent performance, offering durability and quick access to replacement parts to minimize downtime."
+        },
+        {
+          "title": "Electrical Components & Systems",
+          "desc": "Our electrical components, including lamps, multi-meters, transformers, sensors, air conditioning units, meters, fuses, circuit breakers, rectifiers, and buzzers, support diverse electrical functions. They ensure reliable power management, monitoring, and environmental control."
+        },
+        {
+          "title": "Drives & Transmission Spares",
+          "desc": "Our drives and transmission parts, including frequency drivers, motors, controllers, pulleys, belts, and bushes, provide efficient power transfer and control. These components ensure durability and smooth operation in various systems."
+        },
+        {
+          "title": "Laboratory Equipment",
+          "desc": "Our laboratory equipment, including scales, centrifuges, heaters, filter paper, gas columns, and stirrers, enables precise testing and analysis. These tools are designed for accuracy and ease of use in scientific applications."
+        },
+        {
+          "title": "Mechanical Parts & Systems",
+          "desc": "Our mechanical components, including conveyors, belts, chains, saw blades, pulleys, threaded rods, hose fittings, dryers, gear pullers, oil seals, bearings, cutting tools, actuators, shafts, absorbers, mufflers, boosters, and turntables, support diverse mechanical functions. They are built for strength and precision in complex systems."
+        },
+        {
+          "title": "Safety Supplies",
+          "desc": "Our safety supplies, including lamps, clamps, multi-meters, transformers, electric sensors, air conditioning units, meters, fuses, circuit breakers, rectifiers, and buzzers, enhance operational safety through reliable monitoring and control. These components are designed for accuracy and durability, ensuring secure electrical systems and safe environmental conditions."
+        },
+        {
+          "title": "Valves & Actuators",
+          "desc": "Our valves and actuators, including gate, water, knife gate, non-return, air, and check valves, plus PRVs, mounts, positioners, repair kits, and stems, provide precise flow regulation. These components are designed for durability and easy maintenance."
+        }
+      ]
+    },
+    "maintenance": {
+      "title": "Equipment Maintenance",
+      "tagline": "Expert Care & Advanced Diagnostics",
+      "intro": "Our maintenance services ensure reliable performance of critical equipment through expert care and advanced diagnostics. We minimize downtime, enhance safety, and optimize efficiency for turbomachinery, motors, pumps, valves, and instrumentation.",
+      "workTitle": "Our Maintenance Capabilities",
+      "work": [
+        {
+          "title": "Turbomachinery Services",
+          "desc": "Our turbomachinery services deliver expert maintenance and diagnostics for turbines and compressors, ensuring optimal performance and reliability. We minimize downtime through precise repairs and compliance with industry standards."
+        },
+        {
+          "title": "Electric Motors & Generators Maintenance",
+          "desc": "Our electric motors and generators maintenance services ensure optimal performance through expert diagnostics, repairs, and rewinding. We reduce downtime and enhance reliability while meeting stringent industry standards."
+        },
+        {
+          "title": "Pump Maintenance",
+          "desc": "Our pump maintenance services ensure reliable operation through expert diagnostics, repairs, and performance testing. We minimize downtime and extend equipment life while adhering to industry standards."
+        },
+        {
+          "title": "Valve Maintenance",
+          "desc": "Our valve maintenance services deliver expert inspections, repairs, and testing to ensure reliable operation and leak-free performance. We minimize downtime and ensure compliance with industry standards for optimal system efficiency."
+        },
+        {
+          "title": "Electrical & Instrumentation Services",
+          "desc": "Our electrical and instrumentation services provide expert installation, maintenance, and calibration to ensure reliable system performance. We minimize downtime and ensure compliance with industry standards for safe, efficient operations."
+        }
+      ]
+    },
+    "machineShop": {
+      "title": "Machine Shop Services",
+      "tagline": "Precision Engineering & Refurbishment",
+      "intro": "Our precision machine shop services cater to the oil and gas industry, delivering expert pipe repairing, rethreading, and custom component fabrication to support drilling, production, and refining operations. Utilizing state-of-the-art equipment and skilled craftsmanship, we ensure high-performance components meet stringent industry standards for durability and reliability. We provide tailored solutions that enhance operational efficiency and minimize downtime.",
+      "workTitle": "Machine Shop Capabilities",
+      "work": [
+        {
+          "title": "Pipe Rethreading Solutions",
+          "desc": "Our rethreading services refurbish worn or damaged pipe threads, restoring critical connections for drill strings, casing, and tubing in oil and gas applications. We use CNC lathes for precise thread cutting to exact specifications, ensuring leak-free seals. Flexible turnaround times and quality assurance reports ensure rethreaded pipes meet operational demands.",
+          "standards": ["API", "Premium Profiles"]
+        },
+        {
+          "title": "Pipe Repair Expertise",
+          "desc": "Our pipe repair services restore damaged piping addressing issues like corrosion, cracks, or wear with precision welding and machining techniques. Using advanced diagnostics, such as ultrasonic testing, we apply repairs like sleeve installations or metal stitching to ensure structural integrity for high-pressure environments.",
+          "standards": ["API", "ASME"]
+        },
+        {
+          "title": "Custom Component Fabrication",
+          "desc": "We produce high-performance components tailored for oil and gas operations, including flanges, fittings, and specialized pipe sections. Using advanced CNC machining and material selection, such as high-grade alloys or corrosion-resistant steels, we craft components with full traceability, dimensional reports, and on-site delivery.",
+          "standards": ["API 6A"]
+        }
+      ]
+    },
+    "pressureManagement": {
+      "title": "Pressure Management",
+      "tagline": "High-Pressure Iron Inspection & Recertification",
+      "intro": "Your high-pressure iron is the critical link in your pressure control system. Our comprehensive inspection and recertification services are designed to detect and eliminate defects, fatigue, and potential points of failure, ensuring the absolute safety of your personnel, equipment, and the environment. We provide full compliance with API, ASME, and NACE standards through detailed visual, non-destructive, and hydrostatic testing, delivered with maximum convenience via our mobile service trailers.",
+      "workTitle": "Equipment Services We Offer",
+      "work": [
+        {
+          "title": "Hydrostatic Testing & OEM Rebuilds",
+          "desc": "Our hydrostatic testing verifies equipment integrity by exceeding maximum working pressures, ensuring safety and functionality under simulated loads. We monitor for pressure drops or deformation, including valve rattle testing. Certified machinists perform rebuilds to OEM specifications, replacing worn parts and applying coatings to restore equipment to like-new condition."
+        },
+        {
+          "title": "Comprehensive Inspection & NDT",
+          "desc": "Our meticulous inspection process identifies visible and hidden flaws in drilling equipment to prevent failures under pressure. Certified technicians perform visual inspections followed by Non-Destructive Testing methods to detect cracks. Precise dimensional checks and thread gauging ensure compliance with OEM tolerances, backed by serialized reports.",
+          "standards": ["MPI", "UT", "PT"]
+        },
+        {
+          "title": "Certification & Fleet Management",
+          "desc": "We provide comprehensive asset management with serialized Test Certificates and Pressure Chart Documentation. Managed under our Q2-compliant Quality Management System, we offer digital records and Certificates of Conformance. By systematically inspecting and recertifying your flow iron and manifolds, we minimize wellsite incidents and boost operational ROI.",
+          "standards": ["API 6A", "API 16C", "ASME", "API Q2"]
+        }
+      ]
+    },
+    "ndt": {
+      "title": "Advanced NDT Services",
+      "tagline": "Precision Inspections for Unmatched Reliability",
+      "intro": "At Rysgally Gün, we deliver a comprehensive portfolio of Non-Destructive Testing (NDT) services designed to ensure the safety, reliability, and performance of critical assets. Utilizing cutting-edge equipment calibrated to ISO 17025 standards and certified inspectors (ASNT, PCN, ISO 9712), we detect flaws without interrupting operations, ensuring compliance with API, ASME, ISO, and DS-1 standards.",
+      "facilitiesTitle": "Industries We Serve",
+      "facilities": [
+        {
+          "title": "Oil & Gas",
+          "desc": "Inspection of pipelines, drilling equipment, OCTG, pressure vessels, and lifting gear."
+        },
+        {
+          "title": "Power & Energy",
+          "desc": "Integrity management for turbines, boilers, and heavy structural components."
+        },
+        {
+          "title": "Structural",
+          "desc": "Evaluation of steel structures, critical welds, bridges, and heavy machinery."
+        },
+        {
+          "title": "Marine & Offshore",
+          "desc": "Rigorous testing for rigs, vessels, subsea structures, and lifting appliances."
+        }
+      ],
+      "workTitle": "Our NDT Capabilities",
+      "work": [
+        {
+          "title": "Liquid Penetrant Testing (PT)",
+          "desc": "Our precise liquid penetrant testing reveals fine surface defects on non-porous materials and complex geometries. Using specialized penetrants and developers, we make flaws like cracks, porosity, or seams highly visible under UV or white light.",
+          "standards": ["PT"]
+        },
+        {
+          "title": "Visual Testing (VT)",
+          "desc": "Our rigorous visual testing process detects surface irregularities such as cracks, corrosion, wear, and alignment issues. We integrate high-resolution imaging and digital borescope inspections to identify minute flaws in hard-to-reach areas.",
+          "standards": ["VT"]
+        },
+        {
+          "title": "Magnetic Particle Inspection (MPI)",
+          "desc": "We secure the reliability of ferrous components by detecting surface and near-surface flaws. By magnetizing the component and applying ferromagnetic particles under controlled lighting, we reveal minute imperfections that could compromise performance.",
+          "standards": ["MPI"]
+        },
+        {
+          "title": "Phased Array Ultrasonic Testing (PAUT)",
+          "desc": "Using advanced phased array technology and multiple ultrasonic beams, we create comprehensive cross-sectional images of welds, forgings, and complex geometries. This excels at identifying subsurface defects like voids and internal cracks.",
+          "standards": ["PAUT"]
+        },
+        {
+          "title": "Advanced NDT Solutions",
+          "desc": "We deliver customized inspections utilizing a suite of cutting-edge methods to meet complex operational demands. From microscopic surface cracks to internal voids, we provide comprehensive structural evaluations that minimize downtime and enhance safety.",
+          "standards": ["TOFD", "ECT", "RT", "UTG"]
+        }
+      ]
+    },
+    "lifting": {
+      "title": "Lifting Equipment Inspection",
+      "tagline": "Crane & Offshore Container Certification",
+      "intro": "At Rysgally Gün, we deliver a complete portfolio of inspection, testing, and certification services for lifting equipment, cranes, and offshore containers across onshore and offshore operations in Turkmenistan and the Caspian region. Operating in full compliance with Turkmen Dowlet Standartlary and international codes, our LEEA and API-certified inspectors provide the assurance that every lift operates safely and reliably.",
+      "workTitle": "Our Lifting Inspection Capabilities",
+      "work": [
+        {
+          "title": "Crane Inspection & Testing",
+          "desc": "We provide thorough inspection, testing, and certification for mobile, crawler, overhead, and offshore pedestal cranes. Our certified technicians perform pre-commissioning, statutory inspections, proof load testing, and structural NDT on critical components like booms and welds to verify absolute mechanical and electrical integrity.",
+          "standards": ["LOLER", "MPI", "UT", "PAUT"]
+        },
+        {
+          "title": "Lifting Equipment Inspection",
+          "desc": "Our expertise ensures lifting gear—including wire ropes, slings, shackles, hooks, and lifting beams—is safe, defect-free, and compliant. We conduct initial and periodic inspections, load testing, and proof load certification. We also deploy rigorous color coding systems and digital reports with full traceability for efficient gear management.",
+          "standards": ["LEEA", "API RP 8B", "API RP 4G"]
+        },
+        {
+          "title": "Offshore Container & CCU Services",
+          "desc": "We specialize in inspecting and certifying offshore containers and Cargo Carrying Units (CCUs), including baskets, skips, and tank containers. Our services encompass initial and periodic inspections, five-yearly certifications, NDT of welds and lifting points, plus rigorous load, tilt, and functional testing.",
+          "standards": ["DNV 2.7-1", "EN 12079"]
+        }
+      ]
+    },
+    "drillingTools": {
+      "title": "Drilling Tools Inspection",
+      "tagline": "Peak Performance & Operational Safety",
+      "intro": "Ensure the integrity, safety, and peak performance of your critical drilling assets with our comprehensive inspection services. We provide meticulous examination, maintenance, and testing for the entire spectrum of drilling tools used in the oil and gas industry. Our certified inspectors and advanced procedures maximize tool life, prevent costly downtime, and ensure full compliance with the highest industry standards.",
+      "workTitle": "Drilling Tools Services We Offer",
+      "work": [
+        {
+          "title": "Non-Destructive Testing (NDT) & Evaluation",
+          "desc": "Our advanced NDT techniques uncover hidden flaws without damaging tools, ensuring structural integrity for safe operation. Certified technicians employ Magnetic Particle Inspection for ferromagnetic materials, Liquid Penetrant Inspection for surface defects, Ultrasonic Testing for internal flaws, and Electromagnetic Inspection for crack detection.",
+          "standards": ["MPI", "LPI", "UT", "EMI"]
+        },
+        {
+          "title": "Detailed Visual & Dimensional Inspection",
+          "desc": "Our rigorous visual and dimensional assessments ensure tool integrity by detecting surface anomalies like cracks, corrosion, and wear. Skilled inspectors use precision gauges to measure critical dimensions against strict tolerances, providing detailed digital reports and clear flagging of non-compliant tools.",
+          "standards": ["OEM Specifications"]
+        },
+        {
+          "title": "Maintenance, Repair, & Recertification",
+          "desc": "Our end-to-end maintenance services restore tools to optimal condition and extend their service life. Certified machinists perform precision repairs such as rethreading, hardbanding, and component replacement. Following repair, tools undergo rigorous re-inspection to confirm regulatory compliance and receive formal certification documentation.",
+          "standards": ["API"]
+        }
+      ]
+    },
+    "rental": {
+      "title": "Equipment Rental",
+      "tagline": "Premium Drilling Tools & Fleet Leasing",
+      "intro": "Maximize operational flexibility and reduce capital expenditure with our comprehensive drilling tools and equipment rental services. We provide a vast inventory of certified, well-maintained, and field-ready tools for the oil and gas industry. Our solutions are designed to ensure project continuity, provide access to the latest technology, and deliver unwavering reliability, all supported by 24/7 logistical expertise.",
+      "workTitle": "Rental & Leasing Services",
+      "work": [
+        {
+          "title": "Extensive & Certified Rental Inventory",
+          "desc": "Access a diverse, well-maintained fleet of drilling tools, including top drives, mud pumps, drill pipes, and downhole tools, ready for any project without ownership costs. Each item undergoes rigorous inspection to ensure reliability. Our rental services offer the flexibility to scale equipment needs, eliminate large capital investments, and reduce maintenance costs.",
+          "standards": ["API", "OEM"]
+        },
+        {
+          "title": "Maintenance, Inspection & Reliability",
+          "desc": "Our rigorous maintenance protocol ensures rented drilling equipment is in peak condition, minimizing downhole failures and non-productive time. Our service team conducts thorough visual checks, dimensional verification, and NDT to detect any flaws. Every tool is accompanied by traceable documentation, including service history and certification records.",
+          "standards": ["NDT", "MPI", "UT"]
+        },
+        {
+          "title": "Flexible Logistics & Operational Support",
+          "desc": "Our full-service rental solution goes beyond equipment, offering expert logistics and dedicated support to seamlessly integrate tools into your drilling operations. We provide flexible rental terms, timely delivery, and pickup coordinated with your rig schedule. Our technical support team offers operational data, handling guidelines, and on-call assistance."
+        }
+      ]
+    }
+  },
+  "servicesCtaBlock": {
+    "title": "Require Technical Specifications?",
+    "description": "Our engineering team is ready to discuss your project requirements, provide detailed compliance documentation, and deliver tailored industrial solutions.",
+    "button": "Consult Our Engineers"
+  }
+}
+

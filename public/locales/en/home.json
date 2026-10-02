@@ -1,0 +1,150 @@
+{
+  "heroBlock": {
+    "badge": "Equipment Solutions for Demanding Operations",
+    "common": {
+      "requestQuote": "Request Quotation",
+      "exploreSolutions": "Explore Capabilities"
+    },
+    "slides": {
+      "manufacturing": {
+        "title": "Precision CNC & Industrial Machining",
+        "description": "Multi-axis milling, heavy lathes, and specialized tooling systems engineered for high-precision component manufacturing.",
+        "navTitle": "Component Manufacturing",
+        "navSubtitle": "CNC Machining, Turning & Tooling"
+      },
+      "automation": {
+        "title": "Robotic Welding Cells & Thermal Systems",
+        "description": "Integrated robotic fabrication systems, automated positioners, and industrial heat treatment ovens for rigorous production lines.",
+        "navTitle": "Welding & Automation",
+        "navSubtitle": "Robotics, Positioners & Ovens"
+      },
+      "metrology": {
+        "title": "3D Metrology & Rotor Balancing",
+        "description": "High-accuracy 3D laser scanners, optical inspection tools, and dynamic balancing systems for critical equipment maintenance.",
+        "navTitle": "Metrology & Maintenance",
+        "navSubtitle": "3D Scanners & Balancing Systems"
+      }
+    }
+  },
+
+  "applicationsBlock": {
+    "eyebrow": "Organized by Application",
+    "title": "Industrial Machinery & Systems Directory",
+    "description": "The same equipment often spans multiple manufacturing sectors. We structure technical sourcing around your intended operation—matching capacity, tolerances, and certified standards rather than off-the-shelf catalog models.",
+    "buttonViewAll": "Explore All Equipment",
+    "stage": {
+      "badge": "Certified Multi-Market Sourcing",
+      "machineryScopeLabel": "Equipment & Systems Provided",
+      "exploreSector": "View Full Sector Specifications",
+      "requestCustomSpec": "Request Technical Clarification"
+    },
+    "sectors": {
+      "manufacturing": {
+        "title": "Component Manufacturing",
+        "navTitle": "Manufacturing",
+        "subtitle": "CNC Lathes, Milling & Heavy Tooling",
+        "description": "High-precision turning, 5-axis vertical and horizontal machining centers, and heavy workholding systems tailored for tight-tolerance aerospace, energy, and mechanical part production."
+      },
+      "fabrication": {
+        "title": "Cutting & Fabrication",
+        "navTitle": "Fabrication",
+        "subtitle": "Plasma Tables, Pipe Profilers & Saws",
+        "description": "Industrial heavy-plate plasma cutting tables, combined plasma and oxy-fuel gantry systems, pipe profiling rigs, and precision edge-preparation machinery for structural steel shops."
+      },
+      "welding": {
+        "title": "Welding & Automation",
+        "navTitle": "Welding",
+        "subtitle": "Robotics, Cobots, Positioners & Cells",
+        "description": "Turnkey robotic welding cells, collaborative systems, heavy welding positioners, rotators, and multi-process power sources engineered for repetitive, code-compliant fabrication."
+      },
+      "inspection": {
+        "title": "Inspection & Metrology",
+        "navTitle": "Inspection",
+        "subtitle": "Laser Scanners, CMM & 3D Systems",
+        "description": "High-accuracy portable 3D laser scanners, optical coordinates measurement equipment, and surface analysis systems for zero-defect production and reverse-engineering."
+      },
+      "maintenance": {
+        "title": "Rotating Equipment Maintenance",
+        "navTitle": "Maintenance",
+        "subtitle": "Balancing Rigs & Vibration Analyzers",
+        "description": "Dynamic horizontal and vertical rotor balancing machinery, field balancing units, and predictive vibration instrumentation for turbines, pumps, and heavy rotating assets."
+      },
+      "thermal": {
+        "title": "Heating & Thermal Processing",
+        "navTitle": "Thermal",
+        "subtitle": "Industrial Ovens & Custom Chambers",
+        "description": "Industrial annealing, curing, drying, and batch heat-treatment ovens with uniform thermal distribution, calibrated for demanding metallurgical and curing standards."
+      }
+    },
+    "machinery": {
+      "cncLathes": "CNC Heavy Lathes & Turning",
+      "millingCenters": "Multi-Axis Machining Centers",
+      "toolingSystems": "Precision Tooling & Tool Holders",
+      "workholding": "Hydraulic Workholding & Fixtures",
+      "routers": "Industrial CNC Routers",
+      "plasmaTables": "CNC High-Def Plasma Tables",
+      "pipeCutting": "Automated Pipe-Cutting Systems",
+      "oxyFuel": "Combined Plasma & Oxy-Fuel",
+      "bandSaws": "Heavy Industrial Band Saws",
+      "edgePrep": "Plate Edge-Preparation Machinery",
+      "weldingRobots": "6-Axis Industrial Welding Robots",
+      "roboticCells": "Enclosed Robotic Welding Cells",
+      "cobots": "Collaborative Welding Systems",
+      "positioners": "Welding Positioners & Rotators",
+      "fumeExtraction": "Integrated Fume-Extraction Units",
+      "laserScanners": "Handheld 3D Laser Scanners",
+      "portable3D": "Portable Metrology 3D Scanners",
+      "metrologySystems": "Optical Coordinate Measurement",
+      "visionInspection": "Automated Vision-Inspection",
+      "surfaceMeasurement": "Surface Profile & Alignment Units",
+      "horizontalBalancing": "Horizontal Dynamic Balancing",
+      "verticalBalancing": "Vertical Balancing Rigs",
+      "vibrationAnalyzers": "Multi-Channel Vibration Analyzers",
+      "portableBalancing": "Portable Field Balancing Tools",
+      "alignment": "Laser Shaft Alignment Systems",
+      "heatTreatment": "Industrial Heat-Treatment Ovens",
+      "annealingOvens": "High-Temp Annealing Chambers",
+      "conveyorOvens": "Continuous Conveyor Ovens",
+      "batchOvens": "High-Capacity Batch Ovens",
+      "customChambers": "Custom Thermal Chambers"
+    }
+  },
+
+  "whyUsBlock": {
+    "eyebrow": "Why Pacific Solutions",
+    "mainStatement": "We handle the technical heavy lifting so you can focus on running your business.",
+    "description": "Procuring specialized industrial machinery requires rigorous technical clarification, multi-market supplier validation, and international freight management. We coordinate the complete cycle through a single point of contact.",
+    "trustBadge": "Direct coordination from Seoul, Republic of Korea",
+    "buttonLearnMore": "Explore Company Operations",
+    "pillars": {
+      "expertise": {
+        "title": "Industry-Focused Expertise",
+        "description": "We understand the operational requirements of oil & gas, energy, petrochemical, fabrication, and maintenance operations to specify equipment built for demanding conditions.",
+        "tag": "OIL, GAS, ENERGY & MRO"
+      },
+      "network": {
+        "title": "Broad Supplier Network",
+        "description": "We work with verified manufacturers, distributors, and specialist suppliers across multiple markets, giving access to wider machinery lines, tooling, and critical spare parts.",
+        "tag": "MULTI-MARKET ACCESS"
+      },
+      "sourcing": {
+        "title": "Application-Based Sourcing",
+        "description": "We select equipment according to your specific process, capacity, accuracy, operating conditions, certification needs, budget, and delivery requirements.",
+        "tag": "TOLERANCE & PROCESS MATCH"
+      },
+      "coordination": {
+        "title": "Complete Supply Coordination",
+        "description": "From technical clarification and supplier communication to pre-shipment inspection, export documentation, packing, and international delivery.",
+        "tag": "SINGLE POINT OF ACCOUNTABILITY"
+      }
+    }
+  },
+
+  "ctaBlock": {
+    "eyebrow": "Technical Clarification & Procurement",
+    "title": "Ready to discuss your equipment requirements?",
+    "description": "Whether you need to clarify operational tolerances, inquire about lead times, or request a complete multi-machine sourcing proposal, our Seoul team coordinates every step.",
+    "buttonPrimary": "Request Technical Quotation",
+    "buttonSecondary": "Browse Machinery Catalog"
+  }
+}
