@@ -12,59 +12,78 @@ export interface PageHeaderBlockProps {
   className?: string;
 }
 
-export function PageHeaderBlock({ 
-  title, 
-  subtitle, 
-  description, 
+export function PageHeaderBlock({
+  title,
+  subtitle,
+  description,
   backgroundImage,
-  className 
+  className,
 }: PageHeaderBlockProps) {
   return (
-    <section className={cn("relative w-full bg-primary-950 overflow-hidden py-20 sm:py-28 lg:py-32 border-b-4 border-secondary", className)}>
-      
+    <section
+      className={cn(
+        "relative w-full bg-primary-950 overflow-hidden py-16 sm:py-20 lg:py-24 border-b border-white/10 font-sans",
+        className
+      )}
+    >
       {backgroundImage ? (
         <div className="absolute inset-0 pointer-events-none">
-          <Image 
-            src={backgroundImage} 
-            alt="Header Background" 
-            className="w-full h-full object-cover object-[50%_center] md:object-center grayscale opacity-30 mix-blend-luminosity"
+          <Image
+            src={backgroundImage}
+            alt="Header Background"
+            className="w-full h-full object-cover object-[50%_center] grayscale opacity-25 mix-blend-luminosity"
             containerClassName="w-full h-full"
           />
           <div className="absolute inset-0 bg-linear-to-r from-primary-950 via-primary-950/80 to-transparent" />
-          <div className="absolute inset-0 bg-linear-to-t from-primary-950 to-transparent opacity-80" />
+          <div className="absolute inset-0 bg-linear-to-t from-primary-950 to-primary-950/40" />
         </div>
       ) : (
-        <div className="absolute inset-0 opacity-[0.03] bg-[url('../../assets/patterns/grid.svg')] pointer-events-none" />
+        <div
+          className="absolute inset-0 opacity-[0.05] pointer-events-none"
+          style={{
+            backgroundImage:
+              "linear-gradient(to right, rgba(255,255,255,0.15) 1px, transparent 1px), linear-gradient(to bottom, rgba(255,255,255,0.15) 1px, transparent 1px)",
+            backgroundSize: "48px 48px",
+          }}
+        />
       )}
 
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col items-start">
-        <FadeIn direction="up" delay={0}>
-          <div className="flex items-center gap-4 mb-4">
-            <div className="h-1 w-12 bg-secondary" />
-            <Text className="text-xs font-black tracking-[0.2em] text-secondary uppercase">
-              {subtitle}
-            </Text>
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-end">
+          
+          <div className="lg:col-span-7">
+            <FadeIn direction="up" delay={0}>
+              <div className="flex items-center gap-4 mb-5">
+                <div className="h-1 w-10 bg-secondary" />
+                <Text className="text-xs font-bold tracking-[0.2em] text-secondary uppercase">
+                  {subtitle}
+                </Text>
+              </div>
+            </FadeIn>
+
+            <FadeIn direction="up" delay={150}>
+              <Heading
+                level={1}
+                className="text-4xl sm:text-5xl lg:text-6xl text-white font-extrabold uppercase tracking-tight leading-[1.1]"
+              >
+                {title}
+              </Heading>
+            </FadeIn>
           </div>
-        </FadeIn>
 
-        <FadeIn direction="up" delay={150}>
-          <Heading level={1} className="text-4xl sm:text-5xl lg:text-6xl text-white font-black uppercase tracking-tight">
-            {title}
-          </Heading>
-        </FadeIn>
+          {description && (
+            <div className="lg:col-span-5 pb-1 sm:pb-2">
+              <FadeIn direction="up" delay={300}>
+                <div className="lg:border-l border-white/20 lg:pl-6">
+                  <Text className="text-gray-300 text-base sm:text-lg font-medium leading-relaxed">
+                    {description}
+                  </Text>
+                </div>
+              </FadeIn>
+            </div>
+          )}
 
-        {description && (
-          <FadeIn direction="up" delay={300}>
-            <Text className="mt-6 text-gray-300 max-w-2xl text-base md:text-lg font-medium leading-relaxed border-l-2 border-white/20 pl-4">
-              {description}
-            </Text>
-          </FadeIn>
-        )}
-      </div>
-      
-      <div className="absolute top-8 right-8 w-16 h-16 border-t-2 border-r-2 border-white/10 pointer-events-none hidden md:block" />
-      <div className="absolute bottom-8 right-8 text-[10px] font-black tracking-widest text-white/10 uppercase pointer-events-none hidden md:block">
-        RG // {subtitle}
+        </div>
       </div>
     </section>
   );

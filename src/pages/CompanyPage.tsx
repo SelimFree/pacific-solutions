@@ -1,10 +1,10 @@
 import { useTranslation } from "react-i18next";
 import { useDocumentTitle } from "../hooks/useDocumentTitle";
 import { PageHeaderBlock } from "../components/blocks/PageHeaderBlock";
-import { CorporateHeritageBlock } from "../components/blocks/CorporateHeritageBlock";
 import CompanyBgImage from "../assets/company/company_banner.png";
-import { CorporatePoliciesBlock } from "../components/blocks/CorporatePoliciesBlock";
-import { OperationalEthosBlock } from "../components/blocks/OperationalEthosBlock";
+import { CompanyDirectionBlock } from "../components/blocks/CompanyDirectionBlock";
+import { SourcingPipelineBlock } from "../components/blocks/SourcingPipelineBlock";
+import { GlobalNetworkBlock } from "../components/blocks/GlobalNetworkBlock";
 
 export default function CompanyPage() {
     const { t } = useTranslation("company");
@@ -18,9 +18,9 @@ export default function CompanyPage() {
                 subtitle={t("companyPage.header.subtitle")}
                 backgroundImage={CompanyBgImage}
             />
-            <CorporateHeritageBlock />
-            <CorporatePoliciesBlock />
-            <OperationalEthosBlock />
+            <CompanyDirectionBlock />
+            <SourcingPipelineBlock />
+            <GlobalNetworkBlock />
         </div>
     );
 }

@@ -1,113 +1,56 @@
 {
   "companyPage": {
     "header": {
-      "title": "Corporate Overview",
-      "subtitle": "Who We Are"
+      "title": "Powering Critical Industry",
+      "subtitle": "Company Profile"
     }
   },
-  "corporateHeritageBlock": {
-    "subtitle": "Our Heritage",
-    "title": "A Proud Turkmen Company",
-    "p1": "Rysgally Gün is committed to sustainable development within Turkmenistan’s energy sector. We provide cost-effective, high-quality solutions designed to address both current demands and future industry challenges.",
-    "p2": "By adhering strictly to rigorous local and international frameworks, our objective is absolute reliability. We minimize operational risks, eliminate unnecessary downtime, and ensure the safety and efficiency of every project we undertake.",
-    "gridTitle": "Regulatory & Engineering Compliance",
-    "standards": {
-      "isoDesc": "Quality Management",
-      "apiDesc": "Petroleum Institute",
-      "asmeDesc": "Mechanical Engineering",
-      "leeaDesc": "Lifting Equipment",
-      "imcaDesc": "Marine Contractors",
-      "tdsDesc": "Turkmen Standards"
+
+  "companyDirectionBlock": {
+    "eyebrow": "Our Purpose & Mission",
+    "title": "Building Long-Term Industrial Value.",
+    "missionP1": "Our mission is to provide customers in the oil & gas, energy, petrochemical, and industrial sectors with highly reliable equipment, certified spare parts, and integrated supply solutions.",
+    "missionP2": "We deliver reliable industrial solutions today while ensuring every piece of machinery is tailored to your exact technical and operational requirements for the industries of tomorrow.",
+    "gridTitle": "Our Strategic Vision",
+    "imageCaption": "Seoul // Global Sourcing Hub",
+    "imageAlt": "Pacific Solutions industrial coordination facility",
+    "pillars": {
+      "sourcing": "Dependable Supply",
+      "service": "Responsive Action",
+      "technical": "Technical Coordination",
+      "partners": "Long-Term Relationships"
     }
   },
-  "corporatePoliciesBlock": {
-    "subtitle": "Corporate Governance",
-    "title": "Core Policies & Standards",
-    "policies": {
-      "hse": {
-        "title": "Health, Safety & Environment (HSE)",
-        "summary": "At Rysgally Gün, we prioritize the health and safety of our employees, contractors, clients, and community while safeguarding the environment. Protecting people, assets, and the environment is our core foundational value.",
-        "points": {
-          "1": {
-            "title": "Zero Harm Operations",
-            "desc": "Proactive risk identification, continuous safety training, and rigid prevention measures."
-          },
-          "2": {
-            "title": "Environmental Protection",
-            "desc": "Minimizing waste, operational emissions, and resource consumption across all sites."
-          },
-          "3": {
-            "title": "Equipment & Supervision",
-            "desc": "Deploying only certified equipment monitored under strict, continuous supervision protocols."
-          },
-          "4": {
-            "title": "Regulatory Compliance",
-            "desc": "Adherence to Turkmen Dowlet Standartlary, API, ISO, OSHA, IMCA, and LEEA standards."
-          }
-        }
+
+  "sourcingPipelineBlock": {
+    "eyebrow": "End-to-End Coordination",
+    "headingStart": "Our Supply Chain",
+    "headingAccent": "Methodology",
+    "steps": {
+      "scoping": {
+        "title": "Technical Scoping",
+        "description": "Analyzing your operational specifications, required tolerances, capacity, and electrical standards before vendor selection."
       },
-      "it": {
-        "title": "IT & Data Protection",
-        "summary": "We are committed to safeguarding personal and business data, ensuring strict compliance with local and international data protection laws to maintain absolute stakeholder trust and confidentiality.",
-        "points": {
-          "1": {
-            "title": "Core Principles",
-            "desc": "Data is processed lawfully, transparently, and minimally, ensuring accuracy and robust security."
-          },
-          "2": {
-            "title": "Data Handling & Encryption",
-            "desc": "Data is collected with consent, classified by sensitivity, and protected with role-based encryption."
-          },
-          "3": {
-            "title": "Data Subject Rights",
-            "desc": "Individuals retain full rights to access, correct, restrict, or request deletion of their data."
-          },
-          "4": {
-            "title": "Incident & Compliance",
-            "desc": "Aligned with ISO/IEC 27001 and GDPR principles, enforcing strict incident reporting protocols."
-          }
-        }
+      "sourcing": {
+        "title": "Global Sourcing",
+        "description": "Engaging directly with verified OEMs across Korea, Taiwan, Japan, and Europe to match your exact performance requirements."
       },
-      "antiCorruption": {
-        "title": "Anti-Corruption & Bribery",
-        "summary": "Rysgally Gün conducts business with integrity, transparency, and zero tolerance for bribery or corruption. We adhere strictly to international best practices and all applicable Central Asian laws.",
-        "points": {
-          "1": {
-            "title": "Zero Tolerance Policy",
-            "desc": "Bribery, corruption, facilitation payments, or unethical inducements are strictly forbidden."
-          },
-          "2": {
-            "title": "Gifts and Hospitality",
-            "desc": "Strictly limited to modest, reasonable interactions that do not influence business decisions."
-          },
-          "3": {
-            "title": "Third-Party Due Diligence",
-            "desc": "All business partners and contractors must undergo rigorous compliance verification."
-          },
-          "4": {
-            "title": "Reporting & Protection",
-            "desc": "Confidential whistleblowing channels ensure violations are reported and investigated safely."
-          }
-        }
+      "qa": {
+        "title": "Quality Assurance",
+        "description": "Overseeing Factory Acceptance Testing (FAT), validating strict CE/ISO/API compliance, and executing pre-shipment reviews."
+      },
+      "logistics": {
+        "title": "Freight Delivery",
+        "description": "Managing heavy industrial crating, comprehensive export documentation, customs clearances, and secure final site delivery."
       }
     }
   },
-  "operationalEthosBlock": {
-    "subtitle": "Our Mission",
-    "title": "Operational Ethos",
-    "tenets": {
-      "customers": {
-        "title": "We Make Our Customers Successful",
-        "desc": "We are relentless in meeting our commitments. We act with urgency to deliver innovative and high-quality solutions to every project."
-      },
-      "profitability": {
-        "title": "We Grow Profitably",
-        "desc": "We ensure long-term success by investing in future technologies and maintaining a competitive, flexible cost structure."
-      },
-      "integrity": {
-        "title": "We Do It The Right Way",
-        "desc": "We act with strict integrity to deliver sustainable value to our people, our partners, and customers throughout the world."
-      }
-    }
+
+  "globalNetworkBlock": {
+    "eyebrow": "Strategic Operational Footprint",
+    "title": "Seoul Hub // Global Supply Reach",
+    "description": "Headquartered in Seoul, Pacific Solutions is the single coordination anchor linking East Asia's precision manufacturing corridors with energy and industrial operations worldwide.",
+    "paragraph1": "From Seoul, we manage sourcing, quality control, and logistics across Japan, Taiwan, Vietnam, and Singapore. Our teams work directly with qualified manufacturers, so specifications, inspections, and delivery schedules are handled in one place rather than passed between intermediaries.",
+    "paragraph2": "Our European partners in Frankfurt, London, Milan, and Istanbul receive the same supply chain visibility and a single point of contact. Whether it is a one-off urgent order or a long-term supply agreement, every shipment follows a consistent process from factory floor to final destination."
   }
 }
