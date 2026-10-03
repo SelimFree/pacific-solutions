@@ -5,7 +5,7 @@ import { Text } from "../ui/Text";
 import { FadeIn } from "../utils/FadeIn";
 import { Image } from "../ui/Image";
 
-import DirectionImage from "../../assets//company/company_banner.png";
+import DirectionImage from "../../assets/company/directions.png";
 
 const VISION_PILLARS = [
     { id: "sourcing", label: "SOURCING", tKey: "sourcing" },

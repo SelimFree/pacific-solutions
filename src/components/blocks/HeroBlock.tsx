@@ -142,17 +142,20 @@ export const HeroBlock = () => {
               containerClassName="absolute inset-0 z-0 bg-primary-950"
               className="w-full h-[125%] object-cover object-[75%_center] lg:object-center will-change-transform translate-y-[-12%]"
             />
-            <div className="absolute inset-0 z-10 bg-primary-950/75 lg:bg-linear-to-r lg:from-primary-950/95 lg:via-primary-950/80 lg:to-primary-950/40" />
-            <div className="absolute inset-0 z-10 bg-linear-to-t from-primary-950/80 via-transparent to-primary-950/40" />
           </div>
         ))}
       </div>
 
+
+      <div className="pointer-events-none absolute inset-0 z-10 w-full h-full bg-primary-950/50 lg:hidden" />
+      <div className="pointer-events-none absolute inset-0 z-10 w-full h-full hidden lg:block bg-linear-to-r from-primary-950/95 via-primary-950/70 to-primary-950/50" />
+      <div className="pointer-events-none absolute inset-0 z-10 w-full h-full bg-linear-to-t from-primary-950/80 via-primary-950/10 to-transparent" />
+
       <div className="relative z-20 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
-          
+
           <div className="lg:col-span-8 flex flex-col justify-center">
-            
+
             <p
               className={cn(
                 "text-secondary font-semibold text-xs sm:text-sm tracking-wider uppercase mb-3 sm:mb-4 transition-all duration-700 ease-out",
@@ -182,7 +185,7 @@ export const HeroBlock = () => {
             </Text>
 
             <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-6 pt-1">
-              
+
               <div className="flex flex-wrap items-center gap-3">
                 <Link to={activeSlideData.primaryLink} tabIndex={-1}>
                   <Button

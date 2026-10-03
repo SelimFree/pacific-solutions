@@ -18,12 +18,12 @@ import { Dropdown } from "../ui/Dropdown";
 import { Button } from "../ui/Button";
 import { cn } from "../../lib/utils";
 
-import ManufacturingImg from "../../assets/services/construction.png";
-import FabricationImg from "../../assets/services/construction.png";
-import WeldingImg from "../../assets/services/construction.png";
-import InspectionImg from "../../assets/services/construction.png";
-import MaintenanceImg from "../../assets/services/construction.png";
-import ThermalImg from "../../assets/services/construction.png";
+import ManufacturingImg from "../../assets/services/manufacturing.png";
+import FabricationImg from "../../assets/services/fabrication.png";
+import WeldingImg from "../../assets/services/welding.png";
+import InspectionImg from "../../assets/services/inspection.png";
+import MaintenanceImg from "../../assets/services/maintenance.png";
+import ThermalImg from "../../assets/services/thermal.png";
 
 const CATEGORY_KEYS = [
     "manufacturing", 
@@ -224,7 +224,7 @@ function DynamicCatalogContent({ categoryId }: { categoryId: CategoryKey }) {
                 </Text>
             </div>
 
-            <div className="w-full h-48 sm:h-72 overflow-hidden rounded-sm bg-gray-900 border border-white/10">
+            <div className="w-full aspect-video overflow-hidden rounded-sm bg-gray-900 border border-white/10">
                 <img
                     src={config.image}
                     alt={data.title}

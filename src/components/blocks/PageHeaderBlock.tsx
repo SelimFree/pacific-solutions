@@ -31,11 +31,11 @@ export function PageHeaderBlock({
           <Image
             src={backgroundImage}
             alt="Header Background"
-            className="w-full h-full object-cover object-[50%_center] grayscale opacity-25 mix-blend-luminosity"
+            className="w-full h-full object-cover object-[50%_center] "
             containerClassName="w-full h-full"
           />
-          <div className="absolute inset-0 bg-linear-to-r from-primary-950 via-primary-950/80 to-transparent" />
-          <div className="absolute inset-0 bg-linear-to-t from-primary-950 to-primary-950/40" />
+          <div className="absolute inset-0 bg-linear-to-r from-primary-950 via-primary-950/40 to-transparent" />
+          <div className="absolute inset-0 bg-linear-to-t from-primary-950 to-primary-950/20" />
         </div>
       ) : (
         <div
