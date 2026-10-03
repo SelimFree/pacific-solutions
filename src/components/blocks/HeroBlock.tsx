@@ -56,7 +56,6 @@ export const HeroBlock = () => {
     return () => clearTimeout(timer);
   }, []);
 
-  // Parallax visibility observer
   useEffect(() => {
     const section = sectionRef.current;
     if (!section) return;
@@ -69,7 +68,6 @@ export const HeroBlock = () => {
     return () => observer.disconnect();
   }, []);
 
-  // Subtle parallax shift
   useEffect(() => {
     if (!isInView) return;
     const section = sectionRef.current;

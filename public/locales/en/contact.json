@@ -1,20 +1,20 @@
 {
   "contactPage": {
     "header": {
-      "title": "Contact Us",
-      "subtitle": "Initiate Strategic Operations"
+      "title": "Contact Operations",
+      "subtitle": "Initiate Equipment Procurement"
     }
   },
   "contactBlock": {
-    "title": "Engage Our Engineering Team",
-    "description": "Engage with our engineering and procurement specialists to discuss your operational requirements. From urgent component supply to comprehensive facility construction, we deliver rigorous, compliance-driven solutions tailored to your industrial objectives.",
+    "title": "Initiate Technical Procurement",
+    "description": "Engage with our engineering and procurement specialists to discuss your operational requirements. From urgent OEM spares to full-scale CNC and robotics sourcing, we deliver rigorous, compliance-driven solutions tailored to your strict industrial tolerances.",
     "info": {
-      "emailLabel": "Corporate Email",
-      "email": "operations@rysgally-gun.com",
-      "phoneLabel": "Operations Desk",
-      "phone": "+993 (12) 48-81-46",
+      "emailLabel": "Procurement Desk",
+      "email": "operations@pacificsolutions.com",
+      "phoneLabel": "Global Operations",
+      "phone": "+82 (2) 555-0192",
       "addressLabel": "Headquarters",
-      "address": "Business Center ABM, Archabil 41, Ashgabat, Turkmenistan"
+      "address": "Trade Tower, 511 Yeongdong-daero, Gangnam-gu, Seoul, South Korea"
     },
     "form": {
       "firstNameLabel": "First Name",
@@ -22,17 +22,19 @@
       "lastNameLabel": "Last Name",
       "lastNamePlaceholder": "e.g. Doe",
       "companyLabel": "Company Name",
-      "companyPlaceholder": "e.g. Rysgally Gün LLC",
+      "companyPlaceholder": "e.g. Heavy Industries Corp.",
       "emailLabel": "Business Email",
-      "emailPlaceholder": "operations@yourcompany.com",
+      "emailPlaceholder": "procurement@yourcompany.com",
+      "subjectLabel": "Subject / RFQ Reference",
+      "subjectPlaceholder": "e.g. 5-Axis Machining Center Inquiry",
       "messageLabel": "Project Specifications",
-      "messagePlaceholder": "Please detail your technical requirements, standards, and expected timelines..."
+      "messagePlaceholder": "Please detail your technical requirements, target OEM brands, required standards, and delivery timelines..."
     },
-    "errorMessage": "There was an issue submitting your inquiry. Please ensure all fields are correct and try again, or contact us directly via email.",
+    "errorMessage": "There was an issue transmitting your inquiry. Please ensure all parameters are correct and try again, or contact our desk directly via email.",
     "buttonSubmit": "Submit Inquiry",
-    "buttonSending": "Processing...",
-    "successTitle": "Inquiry Received",
-    "successMessage": "Your specifications have been securely transmitted to our engineering desk. A specialist will review your requirements and respond shortly.",
-    "successButton": "Submit Another Inquiry"
+    "buttonSending": "Transmitting...",
+    "successTitle": "Transmission Received",
+    "successMessage": "Your specifications have been securely transmitted to our engineering desk. A procurement specialist will review your requirements and respond shortly.",
+    "successButton": "Submit Another Request"
   }
 }

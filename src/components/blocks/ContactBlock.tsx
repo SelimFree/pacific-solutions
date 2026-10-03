@@ -2,7 +2,8 @@ import { useState, useRef } from "react";
 import { useTranslation } from "react-i18next";
 import {
     Mail, Phone, MapPin, ArrowRight,
-    CheckCircle2, Loader2, AlertCircle, X
+    CheckCircle2, Loader2, AlertCircle, X,
+    Terminal
 } from "lucide-react";
 
 import { Heading } from "../ui/Heading";
@@ -20,6 +21,10 @@ export function ContactBlock() {
     const [isSubmitting, setIsSubmitting] = useState(false);
     const [isSubmitted, setIsSubmitted] = useState(false);
     const [error, setError] = useState<string | null>(null);
+
+    const defaultSubject = typeof window !== "undefined" 
+        ? new URLSearchParams(window.location.search).get("subject") || ""
+        : "";
 
     const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
@@ -60,62 +65,66 @@ export function ContactBlock() {
     };
 
     return (
-        <section className="w-full py-16 md:py-24 relative z-10 bg-white">
+        <section className="w-full py-16 md:py-24 relative z-10 bg-white border-t border-gray-200">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div className="flex flex-col lg:flex-row gap-16 items-start">
+                <div className="flex flex-col lg:flex-row gap-12 lg:gap-16 items-start">
 
-                    <div className="w-full lg:w-5/12 flex flex-col gap-10 lg:sticky lg:top-32">
+                    <div className="w-full lg:w-5/12 flex flex-col gap-8 lg:sticky lg:top-32">
                         <FadeIn direction="up">
-                            <div className="flex items-center gap-4 mb-4">
-                                <div className="h-px w-12 bg-secondary" />
-                                <Heading level={3} className="text-sm font-black tracking-widest text-primary-900 uppercase">
-                                    {t("contactPage.header.title")}
+                            <div className="mb-6">
+                                <span className="mb-5 inline-flex items-center gap-2 px-3 py-1 bg-gray-50 text-[10px] font-mono font-bold tracking-widest text-primary-900 uppercase rounded-sm border border-gray-200">
+                                    <Terminal className="h-3 w-3 text-secondary" />
+                                    {t("contactPage.header.title", "Communications Portal")}
+                                </span>
+                                <Heading level={2} className="text-3xl md:text-4xl font-black text-primary-950 uppercase tracking-tight leading-[1.1] mb-4">
+                                    {t("contactBlock.title")}
                                 </Heading>
+                                <Text className="text-gray-600 text-sm md:text-base leading-relaxed">
+                                    {t("contactBlock.description")}
+                                </Text>
                             </div>
-
-                            <Heading level={2} className="text-3xl md:text-5xl font-black text-primary-950 uppercase tracking-tight leading-tight border-l-4 border-secondary pl-6 mb-6">
-                                {t("contactBlock.title")}
-                            </Heading>
-
-                            <Text className="text-gray-600 text-base md:text-lg leading-relaxed text-justify">
-                                {t("contactBlock.description")}
-                            </Text>
                         </FadeIn>
 
                         <FadeIn direction="up" delay={100}>
-                            <div className="flex flex-col gap-6 mt-4 border-t border-gray-200 pt-8">
-
-                                <div className="flex items-start gap-4 group">
-                                    <div className="bg-gray-50 p-3 rounded-sm group-hover:bg-primary-950 transition-colors duration-300">
-                                        <Mail className="h-6 w-6 text-primary-900 group-hover:text-secondary transition-colors duration-300" />
+                            <div className="flex flex-col border border-gray-200 rounded-sm bg-gray-50 overflow-hidden">
+                                
+                                <div className="flex items-start gap-4 p-5 md:p-6 border-b border-gray-200 bg-white hover:bg-gray-50 transition-colors">
+                                    <div className="bg-gray-100 p-2.5 border border-gray-200 rounded-sm shrink-0">
+                                        <Mail className="h-5 w-5 text-primary-900" />
                                     </div>
-                                    <div className="flex flex-col">
-                                        <span className="text-xs font-black tracking-widest uppercase text-gray-500 mb-1">{t("contactBlock.info.emailLabel")}</span>
-                                        <a href={`mailto:${t("contactBlock.info.email")}`} className="text-primary-950 font-bold hover:text-secondary transition-colors">
+                                    <div className="flex flex-col pt-0.5">
+                                        <span className="text-[10px] font-mono font-bold tracking-widest uppercase text-gray-500 mb-1">
+                                            {t("contactBlock.info.emailLabel")}
+                                        </span>
+                                        <a href={`mailto:${t("contactBlock.info.email")}`} className="text-primary-950 text-sm font-bold hover:text-secondary transition-colors">
                                             {t("contactBlock.info.email")}
                                         </a>
                                     </div>
                                 </div>
 
-                                <div className="flex items-start gap-4 group">
-                                    <div className="bg-gray-50 p-3 rounded-sm group-hover:bg-primary-950 transition-colors duration-300">
-                                        <Phone className="h-6 w-6 text-primary-900 group-hover:text-secondary transition-colors duration-300" />
+                                <div className="flex items-start gap-4 p-5 md:p-6 border-b border-gray-200 bg-white hover:bg-gray-50 transition-colors">
+                                    <div className="bg-gray-100 p-2.5 border border-gray-200 rounded-sm shrink-0">
+                                        <Phone className="h-5 w-5 text-primary-900" />
                                     </div>
-                                    <div className="flex flex-col">
-                                        <span className="text-xs font-black tracking-widest uppercase text-gray-500 mb-1">{t("contactBlock.info.phoneLabel")}</span>
-                                        <a href={`tel:${t("contactBlock.info.phone").replace(/[^0-9+]/g, "")}`} className="text-primary-950 font-bold hover:text-secondary transition-colors">
+                                    <div className="flex flex-col pt-0.5">
+                                        <span className="text-[10px] font-mono font-bold tracking-widest uppercase text-gray-500 mb-1">
+                                            {t("contactBlock.info.phoneLabel")}
+                                        </span>
+                                        <a href={`tel:${t("contactBlock.info.phone").replace(/[^0-9+]/g, "")}`} className="text-primary-950 text-sm font-bold hover:text-secondary transition-colors">
                                             {t("contactBlock.info.phone")}
                                         </a>
                                     </div>
                                 </div>
 
-                                <div className="flex items-start gap-4 group">
-                                    <div className="bg-gray-50 p-3 rounded-sm group-hover:bg-primary-950 transition-colors duration-300">
-                                        <MapPin className="h-6 w-6 text-primary-900 group-hover:text-secondary transition-colors duration-300" />
+                                <div className="flex items-start gap-4 p-5 md:p-6 bg-white hover:bg-gray-50 transition-colors">
+                                    <div className="bg-gray-100 p-2.5 border border-gray-200 rounded-sm shrink-0">
+                                        <MapPin className="h-5 w-5 text-primary-900" />
                                     </div>
-                                    <div className="flex flex-col">
-                                        <span className="text-xs font-black tracking-widest uppercase text-gray-500 mb-1">{t("contactBlock.info.addressLabel")}</span>
-                                        <span className="text-primary-950 font-bold">
+                                    <div className="flex flex-col pt-0.5">
+                                        <span className="text-[10px] font-mono font-bold tracking-widest uppercase text-gray-500 mb-1">
+                                            {t("contactBlock.info.addressLabel")}
+                                        </span>
+                                        <span className="text-primary-950 text-sm font-bold">
                                             {t("contactBlock.info.address")}
                                         </span>
                                     </div>
@@ -127,14 +136,14 @@ export function ContactBlock() {
 
                     <div className="w-full lg:w-7/12">
                         <FadeIn direction="left" delay={200}>
-                            <div className="bg-primary-950 p-8 md:p-12 rounded-sm shadow-2xl border-t-4 border-secondary relative overflow-hidden min-h-125 flex flex-col justify-center">
+                            <div className="bg-primary-950 p-6 md:p-10 rounded-sm border border-primary-900 shadow-xl relative min-h-125flex flex-col justify-center">
 
                                 {!isSubmitted ? (
                                     <form ref={formRef} onSubmit={handleSubmit} className="relative z-10 flex flex-col gap-6">
 
                                         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                                             <div className="flex flex-col gap-2">
-                                                <Label htmlFor="firstName" className="text-xs font-black tracking-widest text-white uppercase">
+                                                <Label htmlFor="firstName" className="text-[10px] font-mono font-bold tracking-widest text-gray-400 uppercase">
                                                     {t("contactBlock.form.firstNameLabel")}
                                                 </Label>
                                                 <Input
@@ -142,11 +151,11 @@ export function ContactBlock() {
                                                     name="firstName"
                                                     required
                                                     placeholder={t("contactBlock.form.firstNamePlaceholder")}
-                                                    className="bg-white/5 border-white/20 text-white placeholder-gray-500 focus:border-secondary focus:ring-secondary"
+                                                    className="h-11 bg-white/3 border-white/10 text-white placeholder-gray-600 focus:border-secondary focus:bg-white/6 rounded-sm transition-colors text-sm shadow-none"
                                                 />
                                             </div>
                                             <div className="flex flex-col gap-2">
-                                                <Label htmlFor="lastName" className="text-xs font-black tracking-widest text-white uppercase">
+                                                <Label htmlFor="lastName" className="text-[10px] font-mono font-bold tracking-widest text-gray-400 uppercase">
                                                     {t("contactBlock.form.lastNameLabel")}
                                                 </Label>
                                                 <Input
@@ -154,14 +163,14 @@ export function ContactBlock() {
                                                     name="lastName"
                                                     required
                                                     placeholder={t("contactBlock.form.lastNamePlaceholder")}
-                                                    className="bg-white/5 border-white/20 text-white placeholder-gray-500 focus:border-secondary focus:ring-secondary"
+                                                    className="h-11 bg-white/3 border-white/10 text-white placeholder-gray-600 focus:border-secondary focus:bg-white/6 rounded-sm transition-colors text-sm shadow-none"
                                                 />
                                             </div>
                                         </div>
 
                                         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                                             <div className="flex flex-col gap-2">
-                                                <Label htmlFor="company" className="text-xs font-black tracking-widest text-white uppercase">
+                                                <Label htmlFor="company" className="text-[10px] font-mono font-bold tracking-widest text-gray-400 uppercase">
                                                     {t("contactBlock.form.companyLabel")}
                                                 </Label>
                                                 <Input
@@ -169,11 +178,11 @@ export function ContactBlock() {
                                                     name="company"
                                                     required
                                                     placeholder={t("contactBlock.form.companyPlaceholder")}
-                                                    className="bg-white/5 border-white/20 text-white placeholder-gray-500 focus:border-secondary focus:ring-secondary"
+                                                    className="h-11 bg-white/3 border-white/10 text-white placeholder-gray-600 focus:border-secondary focus:bg-white/6rounded-sm transition-colors text-sm shadow-none"
                                                 />
                                             </div>
                                             <div className="flex flex-col gap-2">
-                                                <Label htmlFor="email" className="text-xs font-black tracking-widest text-white uppercase">
+                                                <Label htmlFor="email" className="text-[10px] font-mono font-bold tracking-widest text-gray-400 uppercase">
                                                     {t("contactBlock.form.emailLabel")}
                                                 </Label>
                                                 <Input
@@ -182,40 +191,54 @@ export function ContactBlock() {
                                                     type="email"
                                                     required
                                                     placeholder={t("contactBlock.form.emailPlaceholder")}
-                                                    className="bg-white/5 border-white/20 text-white placeholder-gray-500 focus:border-secondary focus:ring-secondary"
+                                                    className="h-11 bg-white/3 border-white/10 text-white placeholder-gray-600 focus:border-secondary focus:bg-white/6 rounded-sm transition-colors text-sm shadow-none"
                                                 />
                                             </div>
                                         </div>
 
                                         <div className="flex flex-col gap-2">
-                                            <Label htmlFor="message" className="text-xs font-black tracking-widest text-white uppercase">
+                                            <Label htmlFor="subject" className="text-[10px] font-mono font-bold tracking-widest text-gray-400 uppercase">
+                                                {t("contactBlock.form.subjectLabel", "Subject / RFQ Reference")}
+                                            </Label>
+                                            <Input
+                                                id="subject"
+                                                name="subject"
+                                                required
+                                                defaultValue={defaultSubject}
+                                                placeholder={t("contactBlock.form.subjectPlaceholder", "Enter inquiry subject")}
+                                                className="h-11 bg-white/3 border-white/10 text-white placeholder-gray-600 focus:border-secondary focus:bg-white/6 rounded-sm transition-colors text-sm shadow-none"
+                                            />
+                                        </div>
+
+                                        <div className="flex flex-col gap-2">
+                                            <Label htmlFor="message" className="text-[10px] font-mono font-bold tracking-widest text-gray-400 uppercase">
                                                 {t("contactBlock.form.messageLabel")}
                                             </Label>
                                             <Textarea
                                                 id="message"
                                                 name="message"
                                                 required
-                                                rows={5}
+                                                rows={4}
                                                 placeholder={t("contactBlock.form.messagePlaceholder")}
-                                                className="bg-white/5 border-white/20 text-white placeholder-gray-500 focus:border-secondary focus:ring-secondary resize-none"
+                                                className="min-h-25 p-4 bg-white/3 border-white/10 text-white placeholder-gray-600 focus:border-secondary focus:bg-white/6 rounded-sm transition-colors text-sm resize-y shadow-none"
                                             />
                                         </div>
 
                                         {error && (
-                                            <div className="relative flex items-start gap-4 p-5 border-l-4 border-red-500 bg-red-500/10 rounded-sm">
-                                                <AlertCircle className="h-5 w-5 text-red-500 shrink-0 mt-0.5" />
+                                            <div className="relative flex items-start gap-4 p-4 border border-red-500/30 bg-red-500/10 rounded-sm">
+                                                <AlertCircle className="h-4 w-4 text-red-400 shrink-0 mt-0.5" />
                                                 <div className="flex-1 pr-6">
-                                                    <Text className="text-xs font-black tracking-widest text-red-400 uppercase mb-1">
-                                                        Error
+                                                    <Text className="text-[10px] font-mono font-bold tracking-widest text-red-400 uppercase mb-1">
+                                                        System Error
                                                     </Text>
-                                                    <Text className="text-xs text-red-200 leading-relaxed">
+                                                    <Text className="text-xs text-red-200">
                                                         {t(error)}
                                                     </Text>
                                                 </div>
                                                 <Button
                                                     type="button"
                                                     onClick={() => setError(null)}
-                                                    className="absolute top-5 right-5 text-red-400 hover:text-red-300 hover:bg-transparent bg-transparent p-0 h-auto min-h-0 transition-colors border-0 shadow-none"
+                                                    className="absolute top-3.5 right-3 text-red-400 hover:text-red-300 hover:bg-transparent bg-transparent p-0 h-auto min-h-0 transition-colors border-0 shadow-none"
                                                 >
                                                     <X className="h-4 w-4" />
                                                 </Button>
@@ -225,40 +248,41 @@ export function ContactBlock() {
                                         <Button
                                             type="submit"
                                             disabled={isSubmitting}
-                                            className="w-full mt-4 group"
+                                            className="w-full mt-2 h-12 bg-white text-primary-950 hover:bg-gray-200 rounded-sm transition-colors border-0 shadow-none group"
                                         >
                                             {isSubmitting ? (
-                                                <span className="flex items-center justify-center gap-2">
-                                                    <Loader2 className="h-4 w-4 animate-spin" />
-                                                    {t("contactBlock.buttonSending")}
+                                                <span className="flex items-center justify-center gap-3 text-xs font-black tracking-widest uppercase">
+                                                    <Loader2 className="h-4 w-4 animate-spin text-secondary" />
+                                                    {t("contactBlock.buttonSending", "Transmitting...")}
                                                 </span>
                                             ) : (
-                                                <span className="flex items-center justify-center gap-2">
+                                                <span className="flex items-center justify-center gap-3 text-xs font-black tracking-widest uppercase">
                                                     {t("contactBlock.buttonSubmit")}
-                                                    <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
+                                                    <ArrowRight className="h-4 w-4 text-secondary transition-transform group-hover:translate-x-1" />
                                                 </span>
                                             )}
                                         </Button>
 
                                     </form>
                                 ) : (
-                                    <div className="relative z-10 flex flex-col items-center justify-center text-center p-8 animate-in fade-in duration-500">
-                                        <div className="h-20 w-20 bg-secondary/10 border border-secondary/20 rounded-full flex items-center justify-center mb-8">
-                                            <CheckCircle2 className="h-10 w-10 text-secondary" strokeWidth={1.5} />
+                                    <div className="relative z-10 flex flex-col items-center justify-center text-center p-8 animate-in fade-in duration-500 h-full min-h-100">
+                                        <div className="h-16 w-16 bg-emerald-500/10 border border-emerald-500/20 rounded-sm flex items-center justify-center mb-6">
+                                            <CheckCircle2 className="h-8 w-8 text-emerald-400" strokeWidth={2} />
                                         </div>
 
-                                        <Heading level={3} className="text-xl md:text-2xl font-black text-white uppercase tracking-widest mb-4">
-                                            {t("contactBlock.successTitle")}
+                                        <Heading level={3} className="text-xl md:text-2xl font-black text-white uppercase tracking-tight mb-3">
+                                            {t("contactBlock.successTitle", "Transmission Received")}
                                         </Heading>
 
                                         <Text className="text-gray-400 text-sm leading-relaxed max-w-sm mx-auto mb-10">
-                                            {t("contactBlock.successMessage")}
+                                            {t("contactBlock.successMessage", "Your inquiry has been logged. Our engineering and procurement team will review your specifications and contact you shortly.")}
                                         </Text>
 
                                         <Button
                                             onClick={() => setIsSubmitted(false)}
+                                            className="bg-white/5 border border-white/10 text-white hover:bg-white/1 rounded-sm text-xs font-black uppercase tracking-widest px-8 shadow-none"
                                         >
-                                            {t("contactBlock.successButton")}
+                                            {t("contactBlock.successButton", "Submit Another Request")}
                                         </Button>
                                     </div>
                                 )}

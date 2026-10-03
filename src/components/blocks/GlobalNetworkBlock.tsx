@@ -48,7 +48,6 @@ export function GlobalNetworkBlock() {
     <section className="w-full bg-primary-950 py-20 sm:py-24 lg:py-28 overflow-hidden font-sans relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-8 items-center">
-          {/* LEFT: heading + paragraphs */}
           <div className="max-w-xl mx-auto lg:mx-0 text-center lg:text-left">
             <FadeIn direction="up" delay={0}>
               <span className="mb-4 inline-flex items-center gap-2 px-3 py-1 bg-white/4 text-[10px] font-mono font-bold tracking-widest text-secondary uppercase rounded-xs">
@@ -67,25 +66,23 @@ export function GlobalNetworkBlock() {
             </FadeIn>
 
             <FadeIn direction="up" delay={200}>
-              <Text className="mt-5 text-gray-300 text-sm sm:text-base leading-relaxed text-left">
+              <Text className="mt-5 text-gray-300 text-sm sm:text-base leading-relaxed text-justify">
                 {t("globalNetworkBlock.description")}
               </Text>
             </FadeIn>
 
-            {/* add these keys to your locale file */}
             <FadeIn direction="up" delay={300}>
-              <Text className="mt-4 text-gray-300 text-sm sm:text-base leading-relaxed text-left">
+              <Text className="mt-4 text-gray-300 text-sm sm:text-base leading-relaxed text-justify">
                 {t("globalNetworkBlock.paragraph1")}
               </Text>
             </FadeIn>
             <FadeIn direction="up" delay={400}>
-              <Text className="mt-4 text-gray-300 text-sm sm:text-base leading-relaxed text-left">
+              <Text className="mt-4 text-gray-300 text-sm sm:text-base leading-relaxed text-justify">
                 {t("globalNetworkBlock.paragraph2")}
               </Text>
             </FadeIn>
           </div>
 
-          {/* RIGHT: map */}
           <FadeIn direction="up" delay={300}>
             <div
               className="relative w-full"
@@ -101,7 +98,6 @@ export function GlobalNetworkBlock() {
                 preserveAspectRatio="xMidYMid meet"
               >
                 <defs>
-                  {/* userSpaceOnUse: works even on perfectly horizontal paths */}
                   <filter
                     id="glow"
                     filterUnits="userSpaceOnUse"
@@ -118,7 +114,6 @@ export function GlobalNetworkBlock() {
                   </filter>
                 </defs>
 
-                {/* Map lives in the same coordinate space as the overlay */}
                 <image
                   href={WorldMapImage}
                   x={0}
@@ -129,7 +124,6 @@ export function GlobalNetworkBlock() {
                   style={{ filter: "invert(1)", opacity: 0.3 }}
                 />
 
-                {/* Origin */}
                 <g>
                   <circle
                     cx={ORIGIN.x}
@@ -144,7 +138,6 @@ export function GlobalNetworkBlock() {
                   <circle cx={ORIGIN.x} cy={ORIGIN.y} r="1.2" fill="#fff" />
                 </g>
 
-                {/* Routes */}
                 {DESTINATIONS.map((d) => {
                   const path = arcPath(ORIGIN, d);
                   return (

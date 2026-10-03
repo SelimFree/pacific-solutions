@@ -1,9 +1,9 @@
 import { useTranslation } from "react-i18next";
 import { useDocumentTitle } from "../hooks/useDocumentTitle";
 import { PageHeaderBlock } from "../components/blocks/PageHeaderBlock";
-import { ServicesDirectoryBlock } from "../components/blocks/ServicesDirectoryBlock";
 import ServicesBgImage from "../assets/services/services_banner.png"
-import { ServicesCtaBlock } from "../components/blocks/ServicesCtaBlock";
+import { TechnicalCatalogExplorerBlock } from "../components/blocks/TechnicalCatalogExplorerBlock";
+import { ServiceAssuranceBlock } from "../components/blocks/ServiceAssuranceBlock";
 
 export default function ServicesPage() {
     const { t } = useTranslation("services");
@@ -18,8 +18,8 @@ export default function ServicesPage() {
                 backgroundImage={ServicesBgImage}
             />
 
-            <ServicesDirectoryBlock />
-            <ServicesCtaBlock/>
+            <TechnicalCatalogExplorerBlock/>
+            <ServiceAssuranceBlock />
         </div>
     );
 }

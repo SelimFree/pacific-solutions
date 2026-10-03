@@ -5,6 +5,352 @@
       "subtitle": "Our Capabilities"
     }
   },
+
+  "technicalCatalogExplorerBlock": {
+    "eyebrow": "Industrial Sourcing Catalog",
+    "title": "Core Supply Domains",
+    "description": "Navigate our core supply domains. Pacific Solutions bridges industrial procurement with verified OEM builders across Korea, Japan, Taiwan, and Europe.",
+    "ui": {
+      "indexTitle": "Supply Category Index [01-06]",
+      "domainArchitecture": "DOMAIN ARCHITECTURE // {{index}}",
+      "activeChannel": "Active OEM Procurement Channel",
+      "figPreview": "FIG {{index}} // OEM SPECIFICATION PREVIEW",
+      "validatedApplications": "Validated Industry Applications:",
+      "sourcingScope": "Standard Sourcing Scope",
+      "makerNetwork": "Verified OEM Maker Network",
+      "conformanceParameters": "Technical Conformance Parameters:",
+      "rfqButton": "Request RFQ for {{title}}"
+    },
+    "items": {
+      "manufacturing": {
+        "index": "01",
+        "title": "CNC & Precision Manufacturing",
+        "eyebrow": "Subtractive Machining",
+        "description": "High-rigidity multi-axis milling, turning, and multi-tasking centers engineered for exotic alloys and heavy structural industrial components.",
+        "domains": [
+          "Aerospace Tooling",
+          "Turbomachinery",
+          "Oil & Gas Valving",
+          "Defense Hardware"
+        ],
+        "equipmentClasses": [
+          {
+            "name": "5-Axis Machining Centers",
+            "specs": "Simultaneous 5-axis, up to 24,000 RPM, thermal compensation"
+          },
+          {
+            "name": "Heavy-Duty CNC Lathes",
+            "specs": "Turning length up to 12,000 mm, swing diameter up to 2,000 mm"
+          },
+          {
+            "name": "Horizontal Boring Mills",
+            "specs": "Spindle diameter 110-180 mm, table loads exceeding 20 tonnes"
+          },
+          {
+            "name": "Automated Workholding",
+            "specs": "Zero-point clamping, hydraulic tombstones, pallet pools"
+          }
+        ],
+        "brands": [
+          "Hyundai WIA",
+          "DN Solutions (Doosan)",
+          "Hwacheon",
+          "Tongtai",
+          "European Tier-1s"
+        ],
+        "standards": [
+          {
+            "label": "Positioning Accuracy",
+            "value": "ISO 230-2 (≤ 0.005 mm)"
+          },
+          {
+            "label": "Control Architectures",
+            "value": "Fanuc / Siemens / Heidenhain"
+          },
+          {
+            "label": "Electrical Compliance",
+            "value": "CE / UL / NFPA 79 (380-480V)"
+          },
+          { "label": "Spindle Runout", "value": "< 0.001 mm at nose taper" }
+        ]
+      },
+      "fabrication": {
+        "index": "02",
+        "title": "Heavy Cutting & Fabrication",
+        "eyebrow": "Material Processing",
+        "description": "Industrial-scale cutting systems including high-definition plasma tables, fiber lasers, and structural pipe profiling machines for heavy structural steel.",
+        "domains": [
+          "Shipbuilding",
+          "Structural Steelwork",
+          "Pressure Vessel Fab",
+          "Offshore Platforms"
+        ],
+        "equipmentClasses": [
+          {
+            "name": "HD Plasma & Laser Tables",
+            "specs": "Up to 30kW fiber laser, true-hole plasma technology, bevel heads"
+          },
+          {
+            "name": "Structural Pipe Cutting",
+            "specs": "6-axis robotic profiling for pipes up to 1,200mm diameter"
+          },
+          {
+            "name": "Heavy-Duty Band Saws",
+            "specs": "Dual-column semi-automatic, bundle cutting capabilities"
+          },
+          {
+            "name": "Plate Beveling & Edge Prep",
+            "specs": "Automated weld-prep milling, double-sided J-groove"
+          }
+        ],
+        "brands": ["Hypertherm", "Koike", "Amada", "Ficep", "Peddinghaus"],
+        "standards": [
+          { "label": "Cut Quality Standard", "value": "ISO 9013 Range 2 to 4" },
+          { "label": "Laser Safety", "value": "Class 1 Enclosures / FDA CDRH" },
+          {
+            "label": "CNC Integration",
+            "value": "Pronest / SigmaNest / Lantek"
+          },
+          {
+            "label": "Extraction",
+            "value": "Downdraft tables w/ HEPA filtration"
+          }
+        ]
+      },
+      "welding": {
+        "index": "03",
+        "title": "Robotics & Automated Welding",
+        "eyebrow": "Production Automation",
+        "description": "Turnkey articulated robotic cells, automatic submerged arc welding (SAW) gantries, and cobot welding arrays for harsh production floors.",
+        "domains": [
+          "Automotive Assemblies",
+          "Heavy Pipeline Spools",
+          "Mining Equipment",
+          "Storage Tanks"
+        ],
+        "equipmentClasses": [
+          {
+            "name": "6-Axis Articulated Robots",
+            "specs": "Payloads 6 kg to 600 kg, reach envelopes up to 3,500 mm"
+          },
+          {
+            "name": "Collaborative Welding (Cobots)",
+            "specs": "High-mix/low-volume deployment, force-torque sensing"
+          },
+          {
+            "name": "Welding Positioners",
+            "specs": "Capacities up to 100 tonnes, synchronized CNC integration"
+          },
+          {
+            "name": "Laser Tracking Systems",
+            "specs": "Real-time seam finding and joint tracking under heavy flux"
+          }
+        ],
+        "brands": [
+          "Fanuc Robotics",
+          "Yaskawa Motoman",
+          "Fronius",
+          "Lincoln Electric",
+          "Kemppi"
+        ],
+        "standards": [
+          {
+            "label": "Welding Qualification",
+            "value": "ASME Section IX / AWS D1.1"
+          },
+          {
+            "label": "Enclosure Protection",
+            "value": "IP65 / IP67 wrist sealing"
+          },
+          {
+            "label": "Position Repeatability",
+            "value": "± 0.02 mm to ± 0.08 mm"
+          },
+          {
+            "label": "Safety Classification",
+            "value": "ISO 10218-1 / Cat 4 PLe"
+          }
+        ]
+      },
+      "inspection": {
+        "index": "04",
+        "title": "Metrology & 3D Inspection",
+        "eyebrow": "Quality Assurance",
+        "description": "Coordinate measurement machines (CMM), portable 3D laser scanners, and automated vision systems for rigid structural precision verification.",
+        "domains": [
+          "Turbine Overhauls",
+          "Aerospace Machining",
+          "Automotive R&D",
+          "Precision Toolmaking"
+        ],
+        "equipmentClasses": [
+          {
+            "name": "Bridge & Gantry CMMs",
+            "specs": "Measuring envelopes up to 6,000 mm length, sub-micron probes"
+          },
+          {
+            "name": "Portable Optical 3D Scanners",
+            "specs": "Handheld scanning, 0.020 mm resolution, blue-light LED"
+          },
+          {
+            "name": "Laser Trackers",
+            "specs": "Radial measurement range up to 80m, spatial accuracy testing"
+          },
+          {
+            "name": "Surface Profilometers",
+            "specs": "Contact and non-contact surface roughness measurement (Ra/Rz)"
+          }
+        ],
+        "brands": ["Hexagon", "Zeiss", "Creaform", "Mitutoyo", "Faro"],
+        "standards": [
+          {
+            "label": "Calibration Standard",
+            "value": "ISO 10360 series verification"
+          },
+          {
+            "label": "Software Compatibility",
+            "value": "PolyWorks / PC-DMIS / SpatialAnalyzer"
+          },
+          {
+            "label": "Thermal Stability",
+            "value": "Active temperature-gradient sensors"
+          },
+          { "label": "Traceability", "value": "NIST / PTB traceable artifacts" }
+        ]
+      },
+      "maintenance": {
+        "index": "05",
+        "title": "Balancing & Plant Maintenance",
+        "eyebrow": "Asset Reliability",
+        "description": "Dynamic balancing machinery, vibration analysis instrumentation, and laser alignment tools designed to maximize rotational equipment lifecycles.",
+        "domains": [
+          "Power Generation",
+          "Pump Manufacturing",
+          "Electric Motor Rewinding",
+          "Marine Propulsion"
+        ],
+        "equipmentClasses": [
+          {
+            "name": "Horizontal Balancing Machines",
+            "specs": "Rotors 5 kg to 30,000 kg, hard-bearing instrumentation"
+          },
+          {
+            "name": "Vertical Balancing Units",
+            "specs": "High-speed single-plane balancing for impellers and flywheels"
+          },
+          {
+            "name": "Vibration Analyzers",
+            "specs": "Multi-channel FFT analysis, route-based condition monitoring"
+          },
+          {
+            "name": "Shaft Laser Alignment",
+            "specs": "Dual-laser precision, soft-foot detection, thermal growth compensation"
+          }
+        ],
+        "brands": ["Schenck", "Hofmann", "Pruftechnik", "Fluke", "SKF"],
+        "standards": [
+          {
+            "label": "Dynamic Balancing",
+            "value": "ISO 21940-11 (G0.4 to G2.5 grades)"
+          },
+          {
+            "label": "Vibration Severity",
+            "value": "ISO 10816 / ISO 20816 standards"
+          },
+          {
+            "label": "Sensor Calibration",
+            "value": "API 670 compliant accelerometers"
+          },
+          {
+            "label": "Reporting",
+            "value": "Automated PDF ISO tolerance reports"
+          }
+        ]
+      },
+      "thermal": {
+        "index": "06",
+        "title": "Thermal & Industrial Ovens",
+        "eyebrow": "Thermal Processing",
+        "description": "Industrial heat-treatment furnaces, curing ovens, and thermal reactors with calibrated atmosphere control and uniform temperature boundaries.",
+        "domains": [
+          "Alloy Heat Treatment",
+          "Composite Curing",
+          "Glass/Ceramics",
+          "Foundry Operations"
+        ],
+        "equipmentClasses": [
+          {
+            "name": "Batch Annealing Furnaces",
+            "specs": "Operating ceilings up to 1,350°C, multi-zone electric/gas"
+          },
+          {
+            "name": "Continuous Conveyor Ovens",
+            "specs": "Variable retention speed, controlled cooling chambers"
+          },
+          {
+            "name": "Vacuum Heat Treatment Units",
+            "specs": "High-vacuum quenching up to 10 bar nitrogen overpressure"
+          },
+          {
+            "name": "Coating & Drying Ovens",
+            "specs": "Explosion-vented construction compliant with NFPA 86"
+          }
+        ],
+        "brands": [
+          "Dong-Ah Thermal",
+          "Hankook Furnace",
+          "Nabertherm OEM",
+          "ThermaTech Korea"
+        ],
+        "standards": [
+          {
+            "label": "Temperature Uniformity",
+            "value": "AMS 2750G / CQI-9 (Class 1 & 2)"
+          },
+          {
+            "label": "Burner Certification",
+            "value": "EN 746-2 / NFPA 86 compliant"
+          },
+          {
+            "label": "Instrumentation",
+            "value": "Eurotherm / Yokogawa controllers"
+          },
+          {
+            "label": "Atmosphere Control",
+            "value": "Endothermic, N2, Ar purge systems"
+          }
+        ]
+      }
+    }
+  },
+  "serviceAssuranceBlock": {
+    "eyebrow": "Commercial & Technical Governance",
+    "title": "Standard Delivery & Compliance Guarantees",
+    "description": "Every order executed through Pacific Solutions adheres to rigorous quality verification protocols, documented export crating standards, and transparent contractual terms.",
+    "guaranteedBadge": "Guaranteed Standard",
+    "items": {
+      "warranty": {
+        "code": "SEC-01",
+        "title": "OEM Warranty Backing",
+        "description": "Standard 12 to 24 month direct factory warranties. Complete coordination of OEM engineer deployment and guaranteed authentic spare parts replacement."
+      },
+      "qa": {
+        "code": "SEC-02",
+        "title": "QA & Inspection (FAT/SAT)",
+        "description": "Witnessed Factory Acceptance Testing via on-site engineers or live video telemetry. Full EN 10204 3.1/3.2 Mill Test Reports and CE/API/ISO conformity dossiers."
+      },
+      "packaging": {
+        "code": "SEC-03",
+        "title": "Maritime Export Crating",
+        "description": "Anti-corrosion VCI barrier packaging, heavy desiccant chambers, and certified ISPM-15 heat-treated timber crating designed for rough sea and overland transit."
+      },
+      "incoterms": {
+        "code": "SEC-04",
+        "title": "Global Incoterms 2020",
+        "description": "Turnkey coordination across FOB, CIF, or DDP to your designated facility. Single-entity customs clearance, bill of lading management, and single-currency billing."
+      }
+    }
+  },
   "servicesDirectoryBlock": {
     "directory": {
       "construction": "Industrial Facility Construction",
@@ -336,4 +682,3 @@
     "button": "Consult Our Engineers"
   }
 }
-
