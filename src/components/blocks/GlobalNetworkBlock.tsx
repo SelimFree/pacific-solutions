@@ -18,15 +18,15 @@ const VIEW = { x: TL.x, y: TL.y, w: BR.x - TL.x, h: BR.y - TL.y };
 const ORIGIN = { id: "seoul", ...project(118, 31) };
 
 const DESTINATIONS = [
-  { id: "tokyo",     lon: 130.7, lat: 29.2,  delay: 0 },
-  { id: "osaka",     lon: 126.5, lat: 28.2,  delay: 1.5 },
-  { id: "taipei",    lon: 112.6, lat: 18.5,  delay: 0.8 },
-  { id: "hanoi",     lon: 96.9,  lat: 14.5,  delay: 2.2 },
-  { id: "singapore", lon: 94.8,  lat: -5.2,  delay: 1.1 },
-  { id: "frankfurt", lon: -0.3,  lat: 43.6,  delay: 0.4 },
-  { id: "london",    lon: -9.1,  lat: 45.0,  delay: 1.9 },
-  { id: "milan",     lon: 0.2,   lat: 39.0,  delay: 2.6 },
-  { id: "istanbul",  lon: 20.0,  lat: 34.5,  delay: 1.3 },
+  { id: "tokyo", lon: 130.7, lat: 29.2, delay: 0 },
+  { id: "osaka", lon: 126.5, lat: 28.2, delay: 1.5 },
+  { id: "taipei", lon: 112.6, lat: 18.5, delay: 0.8 },
+  { id: "hanoi", lon: 96.9, lat: 14.5, delay: 2.2 },
+  { id: "singapore", lon: 94.8, lat: -5.2, delay: 1.1 },
+  { id: "frankfurt", lon: -0.3, lat: 43.6, delay: 0.4 },
+  { id: "london", lon: -9.1, lat: 45.0, delay: 1.9 },
+  { id: "milan", lon: 0.2, lat: 39.0, delay: 2.6 },
+  { id: "istanbul", lon: 20.0, lat: 34.5, delay: 1.3 },
 ].map((d) => ({ ...d, ...project(d.lon, d.lat) }));
 
 function arcPath(a: { x: number; y: number }, b: { x: number; y: number }) {
@@ -112,6 +112,17 @@ export function GlobalNetworkBlock() {
                       <feMergeNode in="SourceGraphic" />
                     </feMerge>
                   </filter>
+
+                  <filter id="invertMap">
+                    <feColorMatrix
+                      in="SourceGraphic"
+                      type="matrix"
+                      values="-1 0 0 0 1 
+                               0 -1 0 0 1 
+                               0 0 -1 0 1 
+                               0 0 0 1 0"
+                    />
+                  </filter>
                 </defs>
 
                 <image
@@ -121,7 +132,8 @@ export function GlobalNetworkBlock() {
                   width={MAP.w}
                   height={MAP.h}
                   preserveAspectRatio="none"
-                  style={{ filter: "invert(1)", opacity: 0.3 }}
+                  filter="url(#invertMap)"
+                  style={{ opacity: 0.3 }}
                 />
 
                 <g>
